@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh !important;
+}
+
+html,
+body,
+textarea,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+body {
+    min-height: calc(100vh - 60px);
+    position: relative;
+    background-image: url('../assets/img/png/glowing-spaceship-orbits.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+
+/* Telas de laptops/desktops muito grandes */
+@media (max-width: 900px) {
+
+    /* Componente Header */
+    .container-logo-top-home {
+        padding: 20px 0 20px;
+    }
+
+    .logo-top-home {
+        width: 200px;
+        height: 100%;
+    }
+
+    /* Componente Home */
+    .box-center-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 290px;
+
+        margin-bottom: 90px;
+    }
+
+    .box-center-home {
+        background: rgba(0, 0, 0, 0.7);
+        max-width: 320px;
+        max-height: 600px;
+        border-radius: 10px;
+    }
+
+    .image-planet-home {
+        width: 290px;
+        height: 200px;
+    }
+
+    .nave-image {
+        bottom: -55px;
+        left: 35px;
+        width: 100%;
+        height: 100%;
+        padding: -40px;
+    }
+
+    .text-box-search {
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-text-filter {
+        width: 100%;
+        margin: 15px 15px;
+    }
+
+    .text-filter {
+        margin: 4px;
+    }
+
+    .loading {
+        text-align: center;
+    }
+
+    /* Componente Planet */
+
+    .planet-section-header {
+        display: inline;
+        flex-direction: column;
+        align-items: start;
+      }
+
+    .planet-card {
+        width: 95%;
+      }
+
+      .box-residents {
+        width: 100%;
+      }
+
+      .box-films {
+        width: 100%;
+      }
+
+      .container-back-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 420px;
+      }
+
+    /* Componente Footer */
+
+    .footer-logo {
+        margin-left: 0px;
+        height: 28px;
+      }
+
+    .footer-text {
+        display: none;
+    }
+
+    .pipe-footer {
+        display: none;
+    }
+
+}
+
+
+/* Tablets em modo paisagem e dispositivos menores */
+@media (min-width: 768px) {}
+
+/* Tablets em modo retrato e dispositivos menores */
+@media (min-width: 600px) {}
+
+/* Smartphones maiores / tablets pequenos (telefones com telas > 480px) */
+@media (min-width: 480px) {}

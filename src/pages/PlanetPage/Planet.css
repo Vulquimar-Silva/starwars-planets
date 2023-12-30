@@ -1,0 +1,148 @@
+.planet-page-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-card {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border-radius: 1rem;
+  width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planet-section-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.planet-detail-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.planet_info {
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.planet-image {
+  top: 339.08px;
+	left: 690.08px;
+	width: 82.41px;
+	height: 82.41px;
+  margin-right: 20px;
+}
+
+.planet-detail-name {
+  margin-right: 30px;
+}
+
+.title-planet {
+	font-size: 14px;
+}
+
+.title-detail {
+	font-size: 18px;
+}
+
+.planet-climate-detail, .planet-terrain-detail, .planet-population-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name-population, .name-terrain, .name-climate {
+  margin-left: 10px;
+}
+
+.planet-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.planet-detail-name {
+	font-size: 14px;
+}
+
+.box-residents, .box-films {
+  background-color: #f1f1f1;
+  border-radius: 0.8rem;
+  font-size: 14px;
+  padding: 1.4rem;
+  margin-top: 2rem;
+  width: 700px;
+}
+
+.container-back-button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 60px;
+  margin-left: 890px;
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: transparent;
+
+  margin-left: -170px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+	font-size: 14px;
+	color:#FFFFFF;
+}
+
+.back-icon{
+	width: 30px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+.icon-residents {
+	top: 461px;
+	left: 704px;
+	width: 15.04px;
+	height: 15.04px;
+	background:rgba(255,255,255,0);
+}
+
+.icon-films {
+	top: 582px;
+	left: 702px;
+	width: 15.68px;
+	height: 16.83px;
+	background:rgba(255,255,255,0);
+}
+
+.loading-details-planet {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
