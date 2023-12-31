@@ -1,5 +1,24 @@
+# Star Wars Planets
 
-```
+## Descrição
+Star Wars Planets Explorer é uma aplicação web interativa que oferece aos usuários a experiência de explorar planetas do universo Star Wars. Utilizando dados em tempo real da API SWAPI, o aplicativo combina tecnologias modernas com uma paixão pela saga Star Wars.
+
+## Tecnologias Utilizadas
+- React 18.2.0: Para construir interfaces de usuário interativas e eficientes.
+- Vite 5.0.8: Ferramenta de build para desenvolvimento rápido e performance otimizada na produção.
+- Axios 1.6.2: Para realizar requisições HTTP assíncronas.
+- GSAP 3.12.4: Para animações sofisticadas.
+- React Router DOM 6.21.1: Para uma navegação eficiente entre páginas.
+
+## Instalação e Execução
+Para iniciar a aplicação localmente, clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/seu-usuario/star-wars-planets.git
+cd star-wars-planets
+npm install
+npm run dev
+
 star-wars-planets
 ├─ .eslintrc.json
 ├─ .gitignore
@@ -35,7 +54,7 @@ star-wars-planets
 │  │  │  └─ ProtectedRoute.jsx
 │  │  └─ SplashScreen
 │  │     ├─ index.jsx
-│  │     └─ logo.css
+│  │     └─ splash.css
 │  ├─ context
 │  │  └─ SearchContext.jsx
 │  ├─ layouts
@@ -49,7 +68,7 @@ star-wars-planets
 │  │  │  └─ index.jsx
 │  │  └─ PlanetPage
 │  │     ├─ index.jsx
-│  │     └─ PlanetPage.css
+│  │     └─ Planet.css
 │  ├─ routes
 │  │  └─ Router.jsx
 │  ├─ services
@@ -58,5 +77,3 @@ star-wars-planets
 │  └─ styles
 │     └─ global.css
 └─ vite.config.js
-
-```

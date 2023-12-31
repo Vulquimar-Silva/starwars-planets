@@ -6,8 +6,9 @@ import { PiFilmSlateBold } from 'react-icons/pi'
 import { MdGroups2 } from 'react-icons/md'
 import { CgTerrain } from 'react-icons/cg'
 import { IoChevronBackOutline } from 'react-icons/io5'
-import { SearchContext } from '../../context/SearchContext'
+import { CiEdit } from 'react-icons/ci'
 
+import { SearchContext } from '../../context/SearchContext'
 import './Planet.css'
 
 const planetImages = {
@@ -25,10 +26,14 @@ const planetImages = {
 
 export function Planet() {
   const { searchData } = useContext(SearchContext)
-  const navigate = useNavigate()
   const [residentsNames, setResidentsNames] = useState([])
   const [loadingDetails, setLoadingDetails] = useState(false)
   const [filmsTitles, setFilmsTitles] = useState([])
+  const [isEditing, setIsEditing] = useState(false)
+  const [editablePlanetName, setEditablePlanetName] = useState(
+    searchData.planet.name,
+  )
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchResidentsAndFilms = async () => {
@@ -53,11 +58,24 @@ export function Planet() {
       }
     }
 
+    setEditablePlanetName(searchData.planet.name)
     fetchResidentsAndFilms()
-  }, [searchData])
+  }, [searchData, searchData.planet])
 
   if (!searchData || !searchData.planet) {
     return <div className="planet-info">Não há dados disponíveis</div>
+  }
+
+  const handleEditName = () => {
+    setIsEditing(true)
+  }
+
+  const handleSaveName = () => {
+    setIsEditing(false)
+  }
+
+  const handleChangeName = (e) => {
+    setEditablePlanetName(e.target.value)
   }
 
   const planet = searchData.planet
@@ -78,7 +96,21 @@ export function Planet() {
 
             <div className="planet-detail-name">
               <span className="title-planet">Planet:</span>
-              <h1 className="title-detail">{planet.name}</h1>
+              {isEditing ? (
+                <input
+                  type="text"
+                  className="edit-planet-name-input"
+                  value={editablePlanetName}
+                  onChange={handleChangeName}
+                  onBlur={handleSaveName}
+                  autoFocus
+                />
+              ) : (
+                <h1 className="title-detail" onClick={handleEditName}>
+                  {editablePlanetName}
+                  <CiEdit className="edit-icon" />
+                </h1>
+              )}
             </div>
           </div>
           <div className="planet-details-section">

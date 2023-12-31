@@ -13,7 +13,7 @@ export function App() {
     const timer = setTimeout(() => {
       setShowSplash(false)
       document.body.style.overflow = 'visible'
-    }, 5800)
+    }, 5500)
 
     return () => {
       clearTimeout(timer)
