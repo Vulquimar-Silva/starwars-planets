@@ -13,6 +13,16 @@ export function LogoIntro() {
     )
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+
+    const timer = setTimeout(() => {
+      document.body.style.overflow = ''
+    }, 5000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <div className="bg-loader">
       <figure>

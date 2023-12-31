@@ -4,10 +4,16 @@
     height: 100vh;
     overflow: hidden !important;
     background-color: #050816;
+
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
   }
 
 #star-logo {

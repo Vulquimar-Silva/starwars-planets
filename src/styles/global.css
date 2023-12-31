@@ -5,11 +5,6 @@
 }
 
 html,
-body {
-    height: 100vh !important;
-}
-
-html,
 body,
 textarea,
 button {
