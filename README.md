@@ -1,4 +1,4 @@
-# Star Wars Planets
+# Desafio técnico - Star Wars Planets
 
 ## Descrição
 Star Wars Planets Explorer é uma aplicação web interativa que oferece aos usuários a experiência de explorar planetas do universo Star Wars. Utilizando dados em tempo real da API SWAPI, o aplicativo combina tecnologias modernas com uma paixão pela saga Star Wars.
